@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+  font-family: $body-font;
+  color: $text-color;
+  background: $site-bg-color;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a{
+  color: $cta-color;
+  font-weight: 500;
+  text-decoration: none;
+  .bb__icon{
+    fill: currentColor;
+    text-decoration: none;
+    use{
+      fill: inherit;
+    }
+  }
+  &:hover{
+    color: $cta-color;
+    text-decoration: underline;
+  }
+  .bg--dark &{
+    color: $cta-on-dark-color;
+    &:hover{
+      color: $cta-on-dark-color;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong{
+  color: $strong-text-color;
+  font-weight: 400;
+
+  .bg--dark &{
+    color: $strong-on-dark-text-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+p,
+figure{
+  margin: 0 0 1rem 0;
+}
+
+p,ul,ol{
+  line-height: 1.6;
+}
+
+.small-caps{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.bb__content{
+  margin: 0 auto;
+  display: block;
+  max-width: $site-width;
+}
+
+.text--{
+  .bg--dark &default,
+  &default{
+    color: inherit;
+  }
+
+  &lead{
+    font-size: 1.33rem;
+  }
+}
+
+.bb__section{
+  padding: $padding 0;
+}
+
+.bg{
+  &--offwhite{
+    background-color: $off-white-color;
+  }
+  &--dark{
+    background-color: $dark-bg-color;
+  }
+}
+
+.flip-y{
+  transform: scaleY(-1);
+}
+
+@media screen and (max-width: $site-width){
+  .bb__content{
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+}

@@ -1,0 +1,36 @@
+.bb__button{
+  display: inline-block;
+  background: $cta-color;
+  padding: 0.75rem 1.25rem;
+  line-height: 16px;
+  border-radius: $border-radius;
+  box-shadow: 0 1px 2px fade-out(darken($cta-color,20%),0.9);
+  @extend .small-caps;
+
+  .bg--dark &{
+    background: $cta-on-dark-color;
+  }
+
+  &--icon{
+    border-radius: 2rem;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    .bg--dark &{
+      background: fade-out($cta-on-dark-color,0.8);
+    }
+  }
+  &--small{
+    padding: 0.25rem;
+    height: 1.5rem;
+    &.bb__button--icon{
+      width: 1.5rem;
+    }
+  }
+  &--cta{
+    &, .bg--dark &{
+      background-color: $cta-color;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.bb__icons{
+  display: none;
+  overflow: hidden;
+}
+
+.bb__icon{
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+
+  &--small{
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  &--caret-down,
+  &--caret-up{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: .15em;
+    border-left: .0625em solid currentColor;
+    border-bottom: .0625em solid currentColor;
+    transform: rotate(-45deg);
+  }
+  &--caret-up{
+    transform: scaleY(-1) rotate(-45deg);
+    vertical-align: -.05em;
+  }
+}

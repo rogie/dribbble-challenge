@@ -1,0 +1,39 @@
+.bb__cta{
+  padding: $padding*2;
+  margin: $padding auto;
+  text-align: center;
+  position: relative;
+  background: $cta-color;
+  overflow: hidden;
+  display: block;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 4px fade-out($cta-color,0.8);
+
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    border-radius: 4rem;
+    width: 16rem;
+    height: 16rem;
+
+  }
+  &:after{
+    background: fade-out(white,0.5);
+    left: -4rem;
+    bottom:-14rem;
+    transform: rotate(-40deg);
+  }
+  &:before{
+    background: fade-out(white,0.8);
+    right: -12rem;
+    top:-8rem;
+    transform: rotate(-60deg);
+  }
+}
+
+@media screen and (max-width: $site-width){
+  .bb__cta{
+    padding: $padding*2 $padding;
+  }
+}

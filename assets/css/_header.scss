@@ -1,0 +1,20 @@
+.bb__header{
+  margin: 0 0 $padding 0;
+}
+
+.bb__main__header{
+  .bb__content{
+    padding: $padding*2;
+    h1,p{
+      max-width: 40rem;
+    }
+  }
+}
+
+@media screen and (max-width: $site-width){
+  .bb__main__header{
+    .bb__content{
+      padding: $padding;
+    }
+  }
+}

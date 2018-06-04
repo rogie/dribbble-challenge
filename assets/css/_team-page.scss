@@ -1,0 +1,19 @@
+.bb__team{
+  margin-top: 6.5rem;
+
+  .bb__card__list{
+    margin-top: -11.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+@media screen and (max-width: $site-width){
+  .bb__team{
+    margin-top: 0;
+    .bb__card__list{
+      margin-top: 0;
+    }
+  }
+}
