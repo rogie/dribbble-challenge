@@ -38,12 +38,14 @@
   h1{
     color: $cta-color;
     margin: 0;
+    letter-spacing: -.05em;
   }
 }
 
 .bb__nav__menu{
   white-space: nowrap;
-  .bb__icon--caret{
+  .bb__icon--caret-up,
+  .bb__icon--caret-down{
     color: $cta-color;
   }
   a[href="#"]{

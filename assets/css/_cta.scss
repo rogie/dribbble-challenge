@@ -16,7 +16,7 @@
     border-radius: 4rem;
     width: 16rem;
     height: 16rem;
-
+    transition: all .3s ease-in;
   }
   &:after{
     background: fade-out(white,0.5);
@@ -29,6 +29,21 @@
     right: -12rem;
     top:-8rem;
     transform: rotate(-60deg);
+  }
+  &:hover{
+    &:before{
+      transform: rotate(-75deg) scale(1.1);
+    }
+    &:after{
+      transform: rotate(-55deg) scale(1.1);
+    }
+  }
+}
+a.bb__cta{
+  &:hover{
+    .bb__button{
+        @extend .bb__button:hover;
+    }
   }
 }
 
